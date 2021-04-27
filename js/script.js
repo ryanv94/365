@@ -1,5 +1,5 @@
-var width = window.screen.availWidth;
-var height = window.screen.availHeight;
+var width = window.screen.width;
+var height = window.screen.height;
 
 if (typeof newrelic == 'object') {
 newrelic.setCustomAttribute('screenWidth', width);
