@@ -1,7 +1,10 @@
 var width = window.screen.width;
 var height = window.screen.height;
 
-var concatRes = width.concat('x', height);
+var strWidth = width.toString();
+var strHeight = height.toString();
+
+var concatRes = strWidth.concat('x', strHeight);
 
 if (typeof newrelic == 'object') {
 newrelic.setCustomAttribute('screenWidth', width);
